@@ -10,6 +10,12 @@ class ProtobufAT3124 < Formula
     regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
   end
 
+  bottle do
+    root_url "https://dl.bintray.com/michaelmior/bottles-protobuf"
+    cellar :any
+    sha256 "48b1aa077e5511a6dd4845997a307786b130bd6dd94cb7f86088a57e552f5036" => :catalina
+  end
+
   head do
     url "https://github.com/protocolbuffers/protobuf.git"
 
