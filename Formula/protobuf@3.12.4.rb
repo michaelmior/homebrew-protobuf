@@ -5,6 +5,12 @@ class ProtobufAT3124 < Formula
   sha256 "e7bf41873d1a87c05c2b0a6197f4445c6ea3469ce0165ff14de2df8b34262530"
   license "BSD-3-Clause"
 
+  bottle do
+    root_url "https://dl.bintray.com/michaelmior/bottles-protobuf"
+    cellar :any
+    sha256 "48b1aa077e5511a6dd4845997a307786b130bd6dd94cb7f86088a57e552f5036" => :catalina
+  end
+
   livecheck do
     url "https://github.com/protocolbuffers/protobuf/releases/latest"
     regex(%r{href=.*?/tag/v?(\d+(?:\.\d+)+)["' >]}i)
